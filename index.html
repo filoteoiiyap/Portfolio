@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filoteo II L. Yap — Video Editor &amp; Content Creator</title>
+<meta name="description" content="Portfolio of Filoteo II L. Yap, a video editor and content creator in Roxas City, Capiz, Philippines, with a background in Information Technology.">
+<meta name="theme-color" content="#14161C">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Filoteo II L. Yap — Video Editing &amp; Content Creation">
+<meta property="og:description" content="Video edits, photo edits and visual storytelling backed by an IT background.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14161C; --surface:#1C1F27; --raised:#242834; --line:#2E3340;
+  --text:#ECEEF3; --muted:#A8AEBD; --accent:#FF5C7A; --clip:#4FD1C5; --audio:#8BC34A;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --wrap:1120px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+h1,h2,h3{font-family:var(--display);line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800}
+h3{font-size:1.2rem;font-weight:700;letter-spacing:-.01em}
+.sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:36px}
+.tc{font:500 .78rem/1 var(--mono);color:var(--muted);border:1px solid var(--line);padding:5px 8px;border-radius:5px;white-space:nowrap}
+.tc.live{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.muted{color:var(--muted)}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font:700 1.05rem var(--display);text-decoration:none}
+.nav ul{display:flex;gap:22px;list-style:none;padding:0;font-size:.95rem}
+.rt{display:flex;gap:8px;align-items:center}
+.nav ul a{text-decoration:none;color:var(--muted);transition:color .2s;padding:6px 0;border-bottom:2px solid transparent}
+.nav ul a.on{color:var(--text);border-bottom-color:var(--accent)}
+header::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:var(--p,0%);background:var(--accent)}
+#sect{color:var(--text)}
+@media(min-width:761px){#sect{display:none}}
+.nav ul a:hover{color:var(--text)}
+@media(max-width:760px){.nav ul{display:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;border:1px solid var(--line);background:var(--surface);text-decoration:none;font-weight:600;font-size:.98rem;cursor:pointer;color:var(--text);font-family:inherit;transition:background .2s,border-color .2s,transform .2s}
+.btn:hover{background:var(--raised);border-color:#444b5c}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#1a0509}
+.btn.primary:hover{background:#ff7690;border-color:#ff7690}
+
+/* hero */
+.hero{padding:96px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:center}
+.portrait{position:relative;aspect-ratio:4/5;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.portrait{order:-1;width:200px}}
+.hero h1{font-size:clamp(2.8rem,7.5vw,5.6rem);font-weight:800;letter-spacing:-.04em;margin:18px 0 10px}
+.role{font:600 clamp(1.1rem,2.4vw,1.45rem) var(--display);color:var(--clip)}
+.loc{margin-top:6px;color:var(--muted)}
+.objective{max-width:62ch;margin:28px 0 32px;font-size:1.18rem;line-height:1.6}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.timeline{position:relative;margin-top:64px;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:34px 16px 16px;overflow:hidden}
+.ruler{position:absolute;left:0;right:0;top:0;height:22px;border-bottom:1px solid var(--line);background:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 48px) bottom/100% 8px no-repeat}
+.track{display:flex;gap:6px;margin-top:8px;height:34px}
+.clip{border-radius:5px;font-size:.78rem;padding:7px 10px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#07191a}
+.v{background:var(--clip)}.v2{background:#7fe3da}.a{background:var(--audio)}
+.playhead{position:absolute;top:0;bottom:0;left:16px;width:2px;background:var(--accent);animation:scrub 2.6s cubic-bezier(.6,.05,.2,1) .4s forwards}
+.playhead::before{content:"";position:absolute;top:0;left:-6px;border:7px solid transparent;border-top:10px solid var(--accent);border-bottom:0}
+@keyframes scrub{to{left:calc(100% - 18px)}}
+
+/* showcase */
+.filters{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
+.chip{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:none;color:var(--muted);font:600 .92rem var(--body);cursor:pointer;transition:all .2s}
+.chip[aria-pressed=true]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:opacity .25s,transform .25s}
+.card[hidden]{display:none}
+.frame{position:relative;background:var(--raised);display:grid;place-items:center;color:var(--muted);text-align:center;font-size:.9rem}
+.frame>*:not(.badges){width:100%;height:100%;border:0;object-fit:cover}
+.frame .slot{display:grid;place-items:center;gap:4px;padding:16px;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(255,255,255,.03) 14px 28px)}
+.r169{aspect-ratio:16/9}.r916{aspect-ratio:9/16;max-height:520px}.r45{aspect-ratio:4/5}
+.badges{position:absolute;left:10px;top:10px;display:flex;gap:6px;z-index:2}
+.badge{font:500 .72rem/1 var(--mono);background:rgba(10,11,15,.82);color:var(--text);padding:5px 7px;border-radius:4px;border:1px solid rgba(255,255,255,.12)}
+.badge.dur{color:var(--accent)}
+.meta{padding:16px 18px 20px}
+.meta p{color:var(--muted);font-size:.95rem;margin-top:6px}
+
+.frame>button.zoom{position:absolute;right:10px;bottom:10px;z-index:2;width:auto;height:auto;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(10,11,15,.85);color:var(--text);font:600 .78rem var(--body);cursor:pointer;transition:background .2s}
+.frame>button.zoom:hover{background:var(--accent);color:#1a0509}
+.frame>img{cursor:zoom-in}
+.proj-top{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.proj-top .tc{margin:0}
+.plogo{width:56px;height:56px;border-radius:14px;flex:none}
+.lft{display:flex;align-items:center;gap:14px;min-width:0}
+.ri{width:42px;height:42px;border-radius:10px;background:var(--raised);display:grid;place-items:center;color:var(--clip);flex:none}
+.ri svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* experience */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media(max-width:860px){.cols{grid-template-columns:1fr;gap:40px}}
+.entry{position:relative;padding:0 0 28px 24px;border-left:2px solid var(--line)}
+.entry::before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.entry .when{font:500 .8rem var(--mono);color:var(--muted);margin:4px 0 8px;display:block}
+.entry p{color:var(--muted);max-width:58ch}
+.sub{font-size:1.1rem;margin:40px 0 4px}
+.certs{list-style:none;padding:0;margin-top:12px}
+.certs li{display:grid;grid-template-columns:84px 1fr auto;gap:4px 16px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}
+.thumb{padding:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--raised);cursor:zoom-in;width:84px;height:64px;transition:border-color .2s,transform .2s}
+.thumb:hover{border-color:var(--accent);transform:scale(1.04)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+#lb{border:0;padding:0;background:transparent;max-width:min(94vw,1100px);max-height:94vh}
+#lb::backdrop{background:rgba(5,6,9,.88)}
+#lb img{display:block;max-width:100%;max-height:88vh;margin:0 auto;border-radius:8px}
+#lb button{display:block;margin:12px auto 0}
+.certs b{font-weight:600}
+.certs span{color:var(--muted);font-size:.92rem}
+.certs .yr{font:500 .8rem var(--mono);color:var(--muted)}
+.certs a{color:var(--clip);font-size:.9rem}
+
+/* skills */
+.skillgrid{display:grid;gap:28px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:7px;background:var(--surface);border:1px solid var(--line);font-size:.93rem}
+.ico{width:18px;height:18px;object-fit:contain;flex:none}
+.mono{width:18px;height:18px;border-radius:4px;display:grid;place-items:center;font:700 .62rem/1 var(--display);color:#fff;flex:none}
+.tools .tag{border-left:3px solid var(--clip)}
+.web .tag{border-left:3px solid var(--audio)}
+
+/* projects */
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.projects{grid-template-columns:1fr}}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px}
+.proj .tc{margin-bottom:14px;display:inline-block}
+.proj p{color:var(--muted);margin-top:10px}
+
+/* contact */
+.contact{background:var(--surface);border-block:1px solid var(--line)}
+.contact h2{margin-bottom:12px}
+.rows{display:grid;gap:12px;margin-top:28px;max-width:640px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 18px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.row span{color:var(--muted);font-size:.9rem;display:block}
+.row a{text-decoration:none;font-weight:600;word-break:break-all}
+.row a:hover{text-decoration:underline}
+footer{padding:32px 0;color:var(--muted);font-size:.9rem}
+#toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:999px;font-weight:600;opacity:0;pointer-events:none;transition:all .25s}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.playhead{left:calc(100% - 18px)}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Filoteo II L. Yap</a>
+    <nav aria-label="Primary"><ul>
+      <li><a href="#work">Work</a></li><li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <div class="rt"><span class="tc" id="sect" aria-live="polite">Home</span><span class="tc live" id="timecode" aria-hidden="true">00:00:00:00</span></div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-grid"><div class="hero-text">
+    <span class="tc">REC · 24 fps</span>
+    <h1>Filoteo II L. Yap</h1>
+    <p class="role">Video Editing &amp; Content Creation</p>
+    <p class="loc">Roxas City, Capiz, Philippines</p>
+    <p class="objective">To apply my experience in video editing, content creation, and visual storytelling—supported by a background in Information Technology—to produce engaging digital media that grows audience reach and strengthens brand communication.</p>
+    <div class="cta">
+      <a class="btn primary" href="#work">View featured work</a>
+      <a class="btn" href="https://drive.google.com/drive/folders/1_H2amQy1kGHXieSW_45o2BVTk8ghJf-2?usp=drive_link" target="_blank" rel="noopener">Resume folder</a>
+      <a class="btn" href="https://drive.google.com/drive/folders/1nox1e6_tNRhO1Kttc8Jwlu5EMyTGnvQ3?usp=drive_link" target="_blank" rel="noopener">Cover letter folder</a>
+      <a class="btn" href="https://github.com/filoteoiiyap" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="#contact">Contact me</a>
+    </div>
+    </div>
+    <figure class="portrait">
+      <img src="media/profile.jpg" alt="Portrait of Filoteo II L. Yap in a black suit and tie" width="800" height="1000" fetchpriority="high">
+      <div class="badges"><span class="badge">4:5</span><span class="badge dur">00:00:00:01</span></div>
+    </figure></div>
+    <div class="timeline" aria-hidden="true">
+      <div class="ruler"></div><div class="playhead"></div>
+      <div class="track"><div class="clip v" style="flex:3">Ideate</div><div class="clip v2" style="flex:2">Shoot</div><div class="clip v" style="flex:4">Cut &amp; pace</div><div class="clip v2" style="flex:2">Color</div><div class="clip v" style="flex:2">Export</div></div>
+      <div class="track"><div class="clip a" style="flex:5">Audio mix</div><div class="clip a" style="flex:4">Effects &amp; transitions</div><div class="clip a" style="flex:4">Publish</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head"><h2>Video &amp; photo showcase</h2><span class="tc">Bin: 7 items</span></div>
+    <div class="filters" role="group" aria-label="Filter showcase">
+      <button class="chip" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" data-f="video" aria-pressed="false">Video Edits</button>
+      <button class="chip" data-f="photo" aria-pressed="false">Photo Edits</button>
+    </div>
+
+    <!--
+      HOW TO ADD YOUR MEDIA
+      Each card has a .frame with data-type and data-src. Paste your URL into data-src:
+        data-type="youtube"  data-src="https://www.youtube.com/embed/VIDEO_ID"
+        data-type="vimeo"    data-src="https://player.vimeo.com/video/VIDEO_ID"
+        data-type="mp4"      data-src="media/my-edit.mp4"   (put files in a /media folder next to index.html)
+        data-type="image"    data-src="media/my-photo.jpg"  (use a high-resolution file)
+      Leave data-src empty to keep the placeholder. Duplicate a whole <article class="card"> to add more.
+      Change data-cat to "video" or "photo", and the ratio class to r169, r916 or r45 to match the format.
+    -->
+    <div class="grid" id="grid">
+
+      <article class="card" data-cat="video">
+        <div class="frame r169" data-type="mp4" data-src="media/edit-23.mp4">
+          <div class="badges"><span class="badge">16:9</span><span class="badge dur">00:02:10 · 576p</span></div>
+          <div class="slot"><b>Video slot</b><span>Paste a 16:9 video URL</span></div>
+        </div>
+        <div class="meta"><h3>Serenity</h3><p>2 minute Slow-paced video edits featuring smooth transitions and natural ambient sounds to create a calm, immersive, and cinematic atmosphere. Emphasizing the beauty of each moment through subtle editing, balanced visuals, and authentic environmental audio.</p></div>
+      </article>
+
+      <article class="card" data-cat="video">
+        <div class="frame r916" data-type="mp4" data-src="media/edit-25.mp4">
+          <div class="badges"><span class="badge">9:16</span><span class="badge dur">00:00:18 · 720p</span></div>
+          <div class="slot"><b>Short-form slot</b><span>Paste a 9:16 video URL</span></div>
+        </div>
+        <div class="meta"><h3>Video Clips Compilation</h3><p>Fast-paced video clips capturing memorable moments and highlights throughout the years</p></div>
+      </article>
+
+      <article class="card" data-cat="video">
+        <div class="frame r169" data-type="mp4" data-src="media/glass.mp4">
+          <div class="badges"><span class="badge">16:9</span><span class="badge dur">00:00:13 · 576p</span></div>
+          <div class="slot"><b>Video slot</b><span>Paste a 16:9 video URL</span></div>
+        </div>
+        <div class="meta"><h3>Vision</h3><p>A short and simple product montage showcasing key features, details, and highlights through clean transitions, appealing visuals, and engaging edits to create an effective and eye-catching advertisement.</p></div>
+      </article>
+
+      <article class="card" data-cat="photo">
+        <div class="frame r45" data-type="image" data-src="media/Hand.jpg"><!-- paste 4:5 photo URL in data-src -->
+          <div class="badges"><span class="badge">4:5</span><span class="badge dur">4000 × 5000</span></div>
+          <div class="slot"><b>Photo slot</b><span>Paste a high-resolution photo URL</span></div>
+        </div>
+        <div class="meta"><h3>Hand Isolation</h3><p>A small, solid black silhouette of a person (head, shoulders, and upper torso) is added right at the base of the middle fingers on the upward-facing hand. The rest of the hand and the mottled, grainy background show no obvious cutout or compositing marks.</p></div>
+      </article>
+
+      <article class="card" data-cat="video">
+        <div class="frame r169" data-type="mp4" data-src="media/edit-24.mp4"><!-- to use YouTube/Vimeo instead: data-type="youtube" data-src="https://www.youtube.com/embed/VIDEO_ID" -->
+          <div class="badges"><span class="badge">16:9</span><span class="badge dur">00:00:29 · 576p</span></div>
+          <div class="slot"><b>Video slot</b><span>Paste a video URL</span></div>
+        </div>
+        <div class="meta"><h3>Pixelated Lens</h3><p>Short media compilation featuring blurred visuals, pixelated effects, and creative transitions to create a unique, experimental video style</p></div>
+      </article>
+
+      <article class="card" data-cat="photo">
+        <div class="frame r169" data-type="image" data-src="media/White.jpg"><!-- paste 16:9 photo URL in data-src -->
+          <div class="badges"><span class="badge">16:9</span><span class="badge dur">6000 × 3375</span></div>
+          <div class="slot"><b>Photo slot</b><span>Paste a high-resolution photo URL</span></div>
+        </div>
+        <div class="meta"><h3>White Flower</h3><p>black-and-white flower covered in water droplets.</p></div>
+      </article>
+
+      <article class="card" data-cat="photo">
+        <div class="frame r45" data-type="image" data-src="media/Red.jpg"><!-- paste 4:5 photo URL in data-src -->
+          <div class="badges"><span class="badge">4:5</span><span class="badge dur">4000 × 5000</span></div>
+          <div class="slot"><b>Photo slot</b><span>Paste a high-resolution photo URL</span></div>
+        </div>
+        <div class="meta"><h3>Heart-Shaped Red Buds</h3><p>The small pinkish-red heart-shaped buds on thin stems.</p></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>Experience, education &amp; certificates</h2></div>
+    <div class="cols">
+      <div>
+        <h3 class="sub" style="margin-top:0">Experience</h3>
+        <div class="entry" style="margin-top:18px">
+          <h3>Content Creator</h3><span class="when">April 2022 – Present</span>
+          <p>End-to-end content creation for a digital channel: ideation, planning, and publishing. Optimizes video pacing, structure, and presentation for visual storytelling and channel growth.</p>
+        </div>
+        <div class="entry">
+          <h3>Video Editor</h3><span class="when">September 2018 – Present</span>
+          <p>Edits video content in KineMaster with transitions, visual effects, and custom audio. Organizes raw footage, adjusts pacing, and formats and optimizes exports for digital platforms.</p>
+        </div>
+        <h3 class="sub">Education</h3>
+        <div class="entry" style="margin-top:18px">
+          <h3>Bachelor of Science in Information Technology</h3><span class="when">Expected to graduate: 2028</span>
+          <p>Filamer Christian University</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sub" style="margin-top:0">Certifications</h3>
+        <ul class="certs">
+          <!-- ADD / DUPLICATE A CERTIFICATE: copy one <li> below. Put your image in /media/certs/, set data-full (large) and the <img src> (small thumbnail), then fill in title, issuer, year, and an optional Drive link. -->
+          <li><button class="thumb" type="button" data-full="media/certs/rescue-177-2023.jpg" aria-label="View certificate: Disaster Emergency Management"><img src="media/certs/rescue-177-2023-thumb.jpg" alt="" loading="lazy"></button><div><b>Disaster Emergency Management with Survival Techniques (Certificate of Training Completion)</b><span>Rescue 177 Training Center · Recognized by NSRC/OCD</span> <!-- <a href="PASTE_DRIVE_LINK" target="_blank" rel="noopener">View credential</a> --></div><span class="yr">Aug 2023</span></li>
+          <li><button class="thumb" type="button" data-full="media/certs/self-awareness-2026.jpg" aria-label="View certificate: Self-Awareness in this Digital Age of AI"><img src="media/certs/self-awareness-2026-thumb.jpg" alt="" loading="lazy"></button><div><b>Self-Awareness in this Digital Age of AI (Certificate of Appreciation)</b><span>Filamer Christian University · World Mental Health Awareness Month 2026</span></div><span class="yr">Oct 2026</span></li>
+          <li><button class="thumb" type="button" data-full="media/certs/adolescent-health-2026.jpg" aria-label="View certificate: Adolescent Reproductive Health"><img src="media/certs/adolescent-health-2026-thumb.jpg" alt="" loading="lazy"></button><div><b>Adolescent Reproductive Health (Certificate of Appreciation)</b><span>Filamer Christian University · World Mental Health Awareness Month 2026</span></div><span class="yr">Oct 2026</span></li>
+          <li><button class="thumb" type="button" data-full="media/certs/substance-abuse-2026.jpg" aria-label="View certificate: Protecting Your Future from Substance Abuse"><img src="media/certs/substance-abuse-2026-thumb.jpg" alt="" loading="lazy"></button><div><b>Protecting Your Future from Substance Abuse (Certificate of Appreciation)</b><span>Filamer Christian University · World Mental Health Awareness Month 2026</span></div><span class="yr">Oct 2026</span></li>
+          <li><button class="thumb" type="button" data-full="media/certs/academic-honors-2017.jpg" aria-label="View certificate: Academic Awardee"><img src="media/certs/academic-honors-2017-thumb.jpg" alt="" loading="lazy"></button><div><b>Academic Awardee, With Honors (Certificate of Recognition)</b><span>Capiz National High School · Grade 7, 4th Quarter</span></div><span class="yr">Mar 2017</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>Skills &amp; tools</h2></div>
+    <div class="skillgrid">
+      <div><h3>Creative &amp; post-production skills</h3><div class="tags">
+        <span class="tag">Video Editing</span><span class="tag">Photography</span><span class="tag">Photo Editing</span><span class="tag">Post-Production</span><span class="tag">Cutting &amp; Pacing</span><span class="tag">Audio Mixing</span><span class="tag">Visual Effects (VFX)</span><span class="tag">Transitions</span><span class="tag">Color Correction</span><span class="tag">Content Strategy</span><span class="tag">Digital Storytelling</span><span class="tag">Short-Form Video</span><span class="tag">Long-Form Video</span><span class="tag">Creative Direction</span></div></div>
+      <div class="tools"><h3>Creative &amp; editing tools</h3><div class="tags"><span class="tag">KineMaster</span><span class="tag">CapCut</span><span class="tag">Picsart</span><span class="tag">Canva</span></div></div>
+      <div class="web"><h3>Web, UI &amp; data</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Tailwind</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Figma</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>Academic projects</h2></div>
+    <div class="projects">
+      <article class="proj"><div class="proj-top"><svg class="plogo" viewBox="0 0 64 64" role="img" aria-label="iFoundFCU logo"><rect width="64" height="64" rx="14" fill="#16343a"/><circle cx="28" cy="28" r="14" fill="none" stroke="#4FD1C5" stroke-width="5"/><path d="M39 39l12 12" stroke="#4FD1C5" stroke-width="6" stroke-linecap="round"/><path d="M28 20a5.5 5.5 0 0 0-5.500 5.500c0 4.500 5.500 10 5.500 10s5.500-5.500 5.500-10A5.500 5.500 0 0 0 28 20z" fill="#FF5C7A"/><circle cx="28" cy="25.500" r="2" fill="#16343a"/></svg><span class="tc">Group project</span></div>
+        <h3>iFoundFCU</h3>
+        <p>A lost-and-found management system. My contribution: designing and building the report and claim submission forms and the user input flows, so students can report or claim an item in a few clear steps.</p>
+        <!-- Add a repo or demo link: <a class="btn" href="URL">View project</a> -->
+      </article>
+      <article class="proj"><div class="proj-top"><svg class="plogo" viewBox="0 0 64 64" role="img" aria-label="MacroMarku logo"><rect width="64" height="64" rx="14" fill="#2b1a2a"/><circle cx="32" cy="32" r="20" fill="none" stroke="#FF5C7A" stroke-width="4"/><circle cx="32" cy="32" r="12" fill="none" stroke="#ECEEF3" stroke-width="3"/><circle cx="32" cy="32" r="5" fill="#FF5C7A"/><circle cx="41" cy="23" r="2.500" fill="#ECEEF3"/><path d="M32 12v5M32 47v5M12 32h5M47 32h5" stroke="#FF5C7A" stroke-width="3" stroke-linecap="round"/></svg><span class="tc">Individual · Figma frontend</span></div>
+        <h3>MacroMarku</h3>
+        <p>An online stock concept for macro photography, showcasing professional close-up images by skilled photographers to highlight the beauty of the small world.</p>
+        <!-- Add a Figma prototype link: <a class="btn" href="URL">View prototype</a> -->
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let’s work together</h2>
+    <p class="muted" style="max-width:56ch">Have a video to cut, a photo to retouch, or a channel to grow? Send me a message and I’ll reply as soon as I can.</p>
+    <div class="rows">
+      <div class="row"><div class="lft"><i class="ri" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></i><div><span>Email</span><a href="mailto:filoteoyap@gmail.com">filoteoyap@gmail.com</a></div></div><button class="btn" id="copy" type="button">Copy email</button></div>
+      <div class="row"><div class="lft"><i class="ri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></i><div><span>Phone</span><a href="tel:+639370858625">+639370858625</a></div></div></div>
+      <div class="row"><div class="lft"><i class="ri" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" fill="#0A66C2" stroke="none"/><path d="M8 10v7M8 7.200v.1M12 10v7M12 13a2 2 0 0 1 4 0v4" stroke="#fff" stroke-width="1.800"/></svg></i><div><span>LinkedIn</span><a href="https://www.linkedin.com/in/filoteo-ii-l-yap-36bab7451" target="_blank" rel="noopener">linkedin.com/in/filoteo-ii-l-yap</a></div></div></div>
+      <div class="row"><div class="lft"><i class="ri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></i><div><span>GitHub</span><a href="https://github.com/filoteoiiyap" target="_blank" rel="noopener">github.com/filoteoiiyap</a></div></div></div>
+      <div class="row"><div class="lft"><i class="ri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><circle cx="12" cy="12.500" r="1.800"/><path d="M9.200 18c.4-1.800 1.400-2.800 2.800-2.800s2.400 1 2.800 2.800"/></svg></i><div><span>Resume</span><a href="https://drive.google.com/drive/folders/1_H2amQy1kGHXieSW_45o2BVTk8ghJf-2?usp=drive_link" target="_blank" rel="noopener">Open resume folder</a></div></div></div>
+      <div class="row"><div class="lft"><i class="ri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 12h6M10 15h6M10 18h4"/></svg></i><div><span>Cover letter</span><a href="https://drive.google.com/drive/folders/1nox1e6_tNRhO1Kttc8Jwlu5EMyTGnvQ3?usp=drive_link" target="_blank" rel="noopener">Open cover letter folder</a></div></div></div>
+    </div>
+    <div class="cta" style="margin-top:28px"><a class="btn primary" href="mailto:filoteoyap@gmail.com?subject=Project%20inquiry">Email me about a project</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr">2026</span> Filoteo II L. Yap · Roxas City, Capiz, Philippines</div></footer>
+<dialog id="lb" aria-label="Full-size preview"><img alt="Certificate"><button class="btn" type="button" id="lbx">Close</button></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+// Fill media slots from data-src
+document.querySelectorAll('.frame[data-src]').forEach(f=>{
+  const src=f.dataset.src.trim(); if(!src) return;
+  const t=f.dataset.type; let el;
+  if(t==='youtube'||t==='vimeo'){el=document.createElement('iframe');el.src=src;el.allow='fullscreen; picture-in-picture';el.loading='lazy';el.title='Video player'}
+  else if(t==='mp4'){el=document.createElement('video');el.src=src;el.controls=true;el.preload='metadata';el.playsInline=true}
+  else{
+    const title=f.parentElement.querySelector('h3').textContent,slot=f.querySelector('.slot');
+    el=document.createElement('img');el.alt=title;el.style.display='none';el.decoding='async';
+    el.onload=()=>{el.style.display='';if(slot)slot.remove();
+      const b=document.createElement('button');b.type='button';b.className='zoom';b.textContent='View full';b.setAttribute('aria-label','View '+title+' full size');
+      b.onclick=el.onclick=()=>openLb(src,title);f.appendChild(b)};
+    el.onerror=()=>{el.remove();if(slot)slot.querySelector('span').textContent='Image not found: '+src+'. Check the file name, extension and media folder.'};
+    el.src=src;f.appendChild(el);return;
+  }
+  const slot=f.querySelector('.slot'); if(slot) slot.remove(); f.appendChild(el);
+});
+
+// Filter
+const chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.card');
+chips.forEach(c=>c.addEventListener('click',()=>{
+  chips.forEach(x=>x.setAttribute('aria-pressed',x===c));
+  cards.forEach(k=>{k.hidden=!(c.dataset.f==='all'||k.dataset.cat===c.dataset.f)});
+}));
+
+// Scroll-linked timecode (24 fps)
+const tc=document.getElementById('timecode');
+const p2=n=>String(n).padStart(2,'0');
+function upd(){
+  const max=document.documentElement.scrollHeight-innerHeight||1;
+  const secs=(scrollY/max)*180, f=Math.floor((secs%1)*24);
+  document.querySelector('header').style.setProperty('--p',(scrollY/max*100)+'%');
+  tc.textContent='00:'+p2(Math.floor(secs/60))+':'+p2(Math.floor(secs%60))+':'+p2(f);
+}
+addEventListener('scroll',upd,{passive:true});upd();
+
+// Copy email
+const toast=document.getElementById('toast');
+document.getElementById('copy').addEventListener('click',async()=>{
+  const email='filoteoyap@gmail.com';
+  try{await navigator.clipboard.writeText(email);toast.textContent='Email copied'}
+  catch(e){toast.textContent='Copy failed. Select the email above instead.'}
+  toast.classList.add('on');setTimeout(()=>toast.classList.remove('on'),2000);
+});
+const lb=document.getElementById('lb');
+function openLb(src,alt){const i=lb.querySelector('img');i.src=src;i.alt=alt||'Preview';lb.showModal()}
+document.querySelectorAll('.thumb').forEach(b=>b.addEventListener('click',()=>{openLb(b.dataset.full,b.getAttribute('aria-label'))}));
+document.getElementById('lbx').addEventListener('click',()=>lb.close());
+lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
+
+// Section awareness: highlight nav + show current section name
+const links=[...document.querySelectorAll('.nav ul a')],sect=document.getElementById('sect');
+const names={home:'Home',work:'Work',experience:'Experience',skills:'Skills',projects:'Projects',contact:'Contact'};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const id=e.target.id;sect.textContent=names[id]||id;
+  links.forEach(a=>{const on=a.getAttribute('href')==='#'+id;a.classList.toggle('on',on);on?a.setAttribute('aria-current','true'):a.removeAttribute('aria-current')})}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section[id]').forEach(x=>io.observe(x));
+
+// Tool logos. To use your own logo file, add data-logo="media/logos/name.svg" to the tag.
+const DV='https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/';
+const LOGO={HTML:'html5/html5-original',CSS:'css3/css3-original',Tailwind:'tailwindcss/tailwindcss-original',JavaScript:'javascript/javascript-original',Python:'python/python-original',MySQL:'mysql/mysql-original',Figma:'figma/figma-original',Canva:'canva/canva-original'};
+const MONO={KineMaster:['K','#E5322D'],CapCut:['C','#000'],Picsart:['P','linear-gradient(135deg,#C209C1,#FF3D5A)']};
+function mono(tag,name){const m=MONO[name]||[name[0],'#3a4052'],d=document.createElement('span');d.className='mono';d.textContent=m[0];d.style.background=m[1];d.setAttribute('aria-hidden','true');tag.prepend(d)}
+document.querySelectorAll('.tools .tag,.web .tag').forEach(t=>{
+  const name=t.textContent.trim(),own=t.dataset.logo,src=own||(LOGO[name]&&DV+LOGO[name]+'.svg');
+  if(!src){mono(t,name);return}
+  const i=new Image();i.className='ico';i.alt='';i.loading='lazy';i.src=src;i.onerror=()=>{i.remove();mono(t,name)};t.prepend(i);
+});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
